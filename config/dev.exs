@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpack.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  # password: "postgres",
   database: "semantic_ui_phoenix_sass_webpack_dev",
   hostname: "localhost",
   pool_size: 10

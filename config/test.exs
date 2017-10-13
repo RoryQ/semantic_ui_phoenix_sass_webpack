@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpack.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  # password: "postgres",
   database: "semantic_ui_phoenix_sass_webpack_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
