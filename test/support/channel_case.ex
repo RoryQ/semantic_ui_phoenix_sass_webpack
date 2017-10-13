@@ -25,7 +25,6 @@ defmodule SemanticUiPhoenixSassWebpackWeb.ChannelCase do
     end
   end
 
-
   setup tags do
     :ok = Ecto.Adapters.SQL.Sandbox.checkout(SemanticUiPhoenixSassWebpack.Repo)
     unless tags[:async] do
