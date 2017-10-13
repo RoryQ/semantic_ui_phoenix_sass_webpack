@@ -11,8 +11,14 @@ config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpackWeb.Endpoi
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-                    cd: Path.expand("../assets", __DIR__)]]
+  watchers: [
+    node: [
+      "node_modules/.bin/webpack-dev-server", "--inline", "--colors", "--hot",
+      "--stdin", "--host", "localhost", "--port", "8080", "--public",
+      "localhost:8080",
+      cd: Path.expand("../assets", __DIR__)
+    ]
+  ]
 
 # ## SSL Support
 #
