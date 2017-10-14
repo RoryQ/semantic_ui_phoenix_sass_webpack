@@ -20,7 +20,7 @@ module.exports = env => {
     context: __dirname,
 
     entry: {
-      app: ["js/app.js", "stylus/app.styl"]
+      app: ["js/app.js"]
     },
 
     output: {
@@ -79,13 +79,13 @@ module.exports = env => {
         },
 
         {
-          test: /\.(css|styl)$/,
+          test: /\.(css)$/,
           exclude: /node_modules/,
           use: isDev
-            ? ["style-loader", "css-loader", "postcss-loader", "stylus-loader"]
+            ? ["style-loader", "css-loader", "postcss-loader"]
             : ExtractTextPlugin.extract({
                 fallback: "style-loader",
-                use: ["css-loader", "postcss-loader", "stylus-loader"]
+                use: ["css-loader", "postcss-loader"]
               })
         }
       ]
@@ -93,7 +93,7 @@ module.exports = env => {
 
     resolve: {
       modules: ["node_modules", __dirname],
-      extensions: [".js", ".json", ".jsx", ".css", ".styl"]
+      extensions: [".js", ".json", ".jsx", ".css"]
     },
 
     plugins: isDev
