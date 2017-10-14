@@ -17,7 +17,7 @@ config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpackWeb.Endpoi
   load_from_system_env: true,
   url: [
     scheme: "https",
-    host: "#{System.get_env("HEROKU_APP_NAME")}.herokuapp.com",
+    host: "#{System.get_env("APP_NAME")}.herokuapp.com",
     port: 443
   ],
   cache_static_manifest: "priv/static/cache_manifest.json"
