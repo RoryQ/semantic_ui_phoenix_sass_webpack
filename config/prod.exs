@@ -15,7 +15,11 @@ use Mix.Config
 # which you typically run after static files are built.
 config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpackWeb.Endpoint,
   load_from_system_env: true,
-  url: [host: "example.com", port: 80],
+  url: [
+    scheme: "https",
+    host: "#{System.get_env("HEROKU_APP_NAME")}.herokuapp.com",
+    port: 443
+  ],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
@@ -42,7 +46,7 @@ config :logger, level: :info
 # ever sent via http, always redirecting to https:
 
 config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpackWeb.Endpoint,
-  force_ssl: [hsts: true]
+  force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
 # Check `Plug.SSL` for all available options in `force_ssl`.
 
@@ -61,4 +65,14 @@ config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpackWeb.Endpoi
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"
+
+config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpackWeb.Endpoint,
+  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
+
+# Configure your database
+config :semantic_ui_phoenix_sass_webpack, SemanticUiPhoenixSassWebpack.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
