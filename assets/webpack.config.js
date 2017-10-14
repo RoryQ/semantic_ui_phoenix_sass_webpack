@@ -31,7 +31,12 @@ module.exports = env => {
     context: __dirname,
 
     entry: {
-      app: ["js/app.js", "css/app.scss"]
+      app: [
+        "vendor/js/index.js",
+        "js/app.js",
+        "vendor/css/index.scss",
+        "css/app.scss"
+      ]
     },
 
     output: {
