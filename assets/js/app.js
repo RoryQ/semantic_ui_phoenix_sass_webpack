@@ -11,3 +11,5 @@
 
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
+
+import "./demo_page";
