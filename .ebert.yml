@@ -16,5 +16,6 @@ engines:
 exclude_paths:
 - config
 - priv
+- assets/vendor
 - test
 - spec
