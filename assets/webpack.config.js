@@ -7,11 +7,16 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 
+const extractSASS = new ExtractTextPlugin({
+  filename: "css/[name].css",
+  allChunks: true
+});
+
 /*
  * Configuration
  **/
 module.exports = env => {
-  const isDev = !(env && env.prod);
+  const isDev = !(require("yargs").argv.p || false);
   const devtool = isDev ? "eval" : "source-map";
 
   return {
@@ -20,7 +25,7 @@ module.exports = env => {
     context: __dirname,
 
     entry: {
-      app: ["js/app.js"]
+      app: ["js/app.js", "css/app.scss"]
     },
 
     output: {
@@ -79,13 +84,13 @@ module.exports = env => {
         },
 
         {
-          test: /\.(css)$/,
+          test: /\.scss$/,
           exclude: /node_modules/,
           use: isDev
-            ? ["style-loader", "css-loader", "postcss-loader"]
-            : ExtractTextPlugin.extract({
+            ? ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
+            : extractSASS.extract({
                 fallback: "style-loader",
-                use: ["css-loader", "postcss-loader"]
+                use: ["css-loader", "postcss-loader", "sass-loader"]
               })
         }
       ]
@@ -93,7 +98,13 @@ module.exports = env => {
 
     resolve: {
       modules: ["node_modules", __dirname],
-      extensions: [".js", ".json", ".jsx", ".css"]
+      extensions: [".js", ".json", ".jsx", ".css", ".scss"]
+    },
+
+    externals: {
+      "react/addons": true,
+      "react/lib/ExecutionEnvironment": true,
+      "react/lib/ReactContext": true
     },
 
     plugins: isDev
@@ -113,10 +124,7 @@ module.exports = env => {
             }
           ]),
 
-          new ExtractTextPlugin({
-            filename: "css/[name].css",
-            allChunks: true
-          }),
+          extractSASS,
 
           new webpack.optimize.UglifyJsPlugin({
             sourceMap: true,
