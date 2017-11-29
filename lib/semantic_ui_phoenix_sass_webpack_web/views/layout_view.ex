@@ -1,17 +1,17 @@
 defmodule SemanticUiPhoenixSassWebpackWeb.LayoutView do
   use SemanticUiPhoenixSassWebpackWeb, :view
 
-  def js_script_tag do
+  def webpack_js_path(conn, path) do
     if Mix.env == :prod do
-      ~s(<script src="/js/app.js"></script>)
+      static_path(conn, path)
     else
-      ~s(<script src="http://localhost:8080/js/app.js"></script>)
+      "//localhost:8080#{path}"
     end
   end
 
-  def css_link_tag do
+  def webpack_css_path(conn, path) do
     if Mix.env == :prod do
-      ~s(<link rel="stylesheet" type="text/css" href="/css/app.css" media="screen,projection" />)
+      static_path(conn, path)
     else
       ""
     end
