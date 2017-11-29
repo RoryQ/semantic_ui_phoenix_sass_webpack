@@ -2,8 +2,10 @@
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "deploy": "brunch build --production",
-    "watch": "brunch watch --stdin",
+    "start": "npm run watch",
+    "watch":
+      "MIX_ENV=dev webpack-dev-server --inline --hot --stdin --colors --public localhost:8080",
+    "deploy": "MIX_ENV=prod webpack -p",
     "eslint": "node_modules/.bin/eslint -c ../.eslintrc.js js/"
   },
   "dependencies": {
