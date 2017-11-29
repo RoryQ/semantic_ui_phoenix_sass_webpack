@@ -3,8 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run watch",
-    "watch":
-      "MIX_ENV=dev webpack-dev-server --inline --hot --stdin --colors --public localhost:8080",
+    "watch": "MIX_ENV=dev webpack-dev-server --inline --hot --stdin --colors --public localhost:8080",
     "deploy": "MIX_ENV=prod webpack -p",
     "eslint": "node_modules/.bin/eslint -c ../.eslintrc.js js/"
   },
@@ -14,10 +13,7 @@
   },
   "devDependencies": {
     "babel-brunch": "6.1.1",
-    "brunch": "2.10.9",
-    "clean-css-brunch": "2.10.0",
     "eslint": "^4.8.0",
-    "eslint-plugin-react": "^7.4.0",
-    "uglify-js-brunch": "2.10.0"
+    "eslint-plugin-react": "^7.4.0"
   }
 }
