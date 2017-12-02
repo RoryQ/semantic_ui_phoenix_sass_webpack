@@ -22,7 +22,7 @@ const extractSASS = new ExtractTextPlugin({
  * Configuration
  **/
 module.exports = env => {
-  const isDev = !(env && env.prod);
+  const isDev = !(require("yargs").argv.p || false);
   const devtool = isDev ? "eval" : "source-map";
 
   return {
