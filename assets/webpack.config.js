@@ -7,6 +7,12 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 
+const providePlugin = new webpack.ProvidePlugin({
+  $: "jquery",
+  jQuery: "jquery",
+  "window.jQuery": "jquery"
+});
+
 const extractSASS = new ExtractTextPlugin({
   filename: "css/[name].css",
   allChunks: true
@@ -108,7 +114,9 @@ module.exports = env => {
               from: "./static",
               to: path.resolve(__dirname, "../priv/static")
             }
-          ])
+          ]),
+
+          providePlugin
         ]
       : [
           new CopyWebpackPlugin([
@@ -117,6 +125,8 @@ module.exports = env => {
               to: path.resolve(__dirname, "../priv/static")
             }
           ]),
+
+          providePlugin,
 
           extractSASS,
 
