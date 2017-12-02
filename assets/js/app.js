@@ -32,5 +32,6 @@ import "semantic-ui-sass/js/transition";
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+import "./demo_page";
 
 window.$ = window.jQuery = jQuery;

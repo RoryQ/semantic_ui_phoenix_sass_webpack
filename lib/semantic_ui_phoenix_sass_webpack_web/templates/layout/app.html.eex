@@ -12,16 +12,9 @@
   </head>
 
   <body>
-    <div class="ui text container">
-
-      <p class="ui hidden warning message"" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="ui hidden info message" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-
-    </div> <!-- /container -->
+    <div class="ui container">
+      <%= render @view_module, @view_template, assigns %>
+    </div>
     <script src="<%= webpack_js_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

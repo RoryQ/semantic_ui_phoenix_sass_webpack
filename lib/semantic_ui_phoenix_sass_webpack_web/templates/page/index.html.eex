@@ -1,0 +1,790 @@
+<h1>Examples</h1>
+
+<h2 class="ui dividing header">Site</h2>
+
+<div class="ui three column stackable grid">
+  <div class="column">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+  </div>
+  <div class="column">
+    <h2>Example body text</h2>
+    <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+    <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+    <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+  </div>
+  <div class="column">
+    <div class="ui three column stackable padded middle aligned centered color grid">
+      <div class="red column">Red</div>
+      <div class="orange column">Orange</div>
+      <div class="yellow column">Yellow</div>
+      <div class="olive column">Olive</div>
+      <div class="green column">Green</div>
+      <div class="teal column">Teal</div>
+      <div class="blue column">Blue</div>
+      <div class="violet column">Violet</div>
+      <div class="purple column">Purple</div>
+      <div class="pink column">Pink</div>
+      <div class="brown column">Brown</div>
+      <div class="grey column">Grey</div>
+      <div class="black column">Black</div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">Buttons</h2>
+
+<div class="ui stackable equal width grid">
+  <div class="column">
+    <button class="ui button">Default</button>
+    <button class="ui primary button">Primary</button>
+    <button class="ui secondary button">Secondary</button>
+    <button class="ui basic button">Basic</button>
+    <button class="ui compact button">
+      Compact
+    </button>
+
+    <div class="ui divider"></div>
+    <button class="ui icon button">
+      <i class="heart icon"></i>
+    </button>
+    <button class="ui labeled icon button">
+      <i class="heart icon"></i>
+      Labeled
+    </button>
+    <button class="ui right labeled icon button">
+      <i class="heart icon"></i>
+      Labeled
+    </button>
+
+    <div class="ui divider"></div>
+
+    <div class="ui buttons">
+      <button class="ui button">Combo</button>
+      <div class="ui floating dropdown icon button">
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">Choice 1</div>
+          <div class="item">Choice 2</div>
+          <div class="item">Choice 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui floating search dropdown button">
+      <span class="text">Search Dropdown</span>
+      <div class="menu">
+        <div class="item">Arabic</div>
+        <div class="item">Chinese</div>
+        <div class="item">Danish</div>
+        <div class="item">Dutch</div>
+        <div class="item">English</div>
+        <div class="item">French</div>
+        <div class="item">German</div>
+        <div class="item">Greek</div>
+        <div class="item">Hungarian</div>
+        <div class="item">Italian</div>
+        <div class="item">Japanese</div>
+        <div class="item">Korean</div>
+        <div class="item">Lithuanian</div>
+        <div class="item">Persian</div>
+        <div class="item">Polish</div>
+        <div class="item">Portuguese</div>
+        <div class="item">Russian</div>
+        <div class="item">Spanish</div>
+        <div class="item">Swedish</div>
+        <div class="item">Turkish</div>
+        <div class="item">Vietnamese</div>
+      </div>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui animated button" tabindex="0">
+      <div class="visible content">Horizontal</div>
+      <div class="hidden content">
+        Hidden
+      </div>
+    </div>
+    <div class="ui vertical animated button" tabindex="0">
+      <div class="visible content">Vertical</div>
+      <div class="hidden content">
+        Hidden
+      </div>
+    </div>
+    <div class="ui animated fade button" tabindex="0">
+      <div class="visible content">Fade In</div>
+      <div class="hidden content">
+        Hidden
+      </div>
+    </div>
+
+    <div class="ui divider"></div>
+    <button class="ui disabled button">Disabled</button>
+    <button class="ui loading button">Loading</button>
+
+    <div class="ui divider"></div>
+
+    <div class="ui buttons">
+      <button class="ui button">1</button>
+      <button class="ui button">2</button>
+      <button class="ui button">3</button>
+    </div>
+
+    <div class="ui icon buttons">
+      <button class="ui button"><i class="align left icon"></i></button>
+      <button class="ui button"><i class="align center icon"></i></button>
+      <button class="ui button"><i class="align right icon"></i></button>
+      <button class="ui button"><i class="align justify icon"></i></button>
+    </div>
+
+    <div class="ui buttons">
+      <button class="ui button">1</button>
+      <div class="or"></div>
+      <button class="ui button">2</button>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui two top attached buttons">
+      <div class="ui button">One</div>
+      <div class="ui button">Two</div>
+    </div>
+    <div class="ui attached segment">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+    </div>
+    <div class="ui two bottom attached buttons">
+      <div class="ui button">One</div>
+      <div class="ui button">Two</div>
+    </div>
+
+  </div>
+  <div class="column">
+    <button class="ui mini button">Mini</button>
+    <button class="ui tiny button">Tiny</button>
+    <button class="ui small button">Small</button>
+    <button class="ui large button">Large</button>
+    <button class="ui big button">Big</button>
+    <button class="ui huge button">Huge</button>
+    <button class="ui massive button">Massive</button>
+    <div class="ui divider"></div>
+    <div class="spaced">
+      <button class="yellow ui button">Yellow</button>
+      <button class="orange ui button">Orange</button>
+      <button class="green ui button">Green</button>
+      <button class="teal ui button">Teal</button>
+      <button class="blue ui button">Blue</button>
+      <button class="purple ui button">Purple</button>
+      <button class="pink ui button">Pink</button>
+      <button class="red ui button">Red</button>
+      <button class="black ui button">Black</button>
+    </div>
+
+
+    <div class="ui divider"></div>
+
+    <div class="ui inverted segment">
+      <button class="ui inverted button">Inverted</button>
+      <button class="ui inverted basic button">Basic</button>
+      <button class="ui inverted blue button">Colored</button>
+      <button class="ui inverted blue basic button">Basic Colored</button>
+    </div>
+
+  </div>
+</div>
+
+<h2 class="ui dividing header">Card</h2>
+
+
+<div class="ui four cards">
+  <div class="ui card">
+    <div class="image">
+      <div class="ui blurring inverted dimmer">
+        <div class="content">
+          <div class="center">
+            <div class="ui teal button">Add Friend</div>
+          </div>
+        </div>
+      </div>
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/image.png">
+    </div>
+    <div class="content">
+      <div class="header">Title</div>
+      <div class="meta">
+        <a class="group">Meta</a>
+      </div>
+      <div class="description">One or two sentence description that may go to several lines</div>
+    </div>
+    <div class="extra content">
+      <a class="right floated created">Arbitrary</a>
+      <a class="friends">
+        Arbitrary</a>
+    </div>
+  </div>
+  <div class="ui card">
+    <div class="blurring dimmable image">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <div class="ui inverted button">Call to Action</div>
+          </div>
+        </div>
+      </div>
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/image.png">
+    </div>
+    <div class="content">
+      <a class="header">Name</a>
+      <div class="meta">
+        <span class="date">Date</span>
+      </div>
+    </div>
+    <div class="extra content">
+      <a>
+        <i class="users icon"></i>
+        Users
+      </a>
+    </div>
+  </div>
+  <div class="ui card">
+    <div class="ui slide right reveal image">
+      <div class="visible content">
+        <img class="ui fluid image" src="https://semantic-ui.com/examples/assets/images/avatar/nan.jpg">
+      </div>
+      <div class="hidden content">
+        <img class="ui fluid image" src="https://semantic-ui.com/examples/assets/images/avatar/tom.jpg">
+      </div>
+    </div>
+    <div class="content">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+    </div>
+  </div>
+  <div class="ui card">
+    <div class="ui move reveal image">
+      <div class="visible content">
+        <img class="ui fluid image" src="https://semantic-ui.com/examples/assets/images/avatar/tom.jpg">
+      </div>
+      <div class="hidden content">
+        <img class="ui fluid image" src="https://semantic-ui.com/examples/assets/images/avatar/nan.jpg">
+      </div>
+    </div>
+    <div class="content">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+    </div>
+  </div>
+</div>
+<div class="ui four cards">
+  <div class="ui card">
+    <div class="extra content">
+      <span class="left floated like">
+        <i class="like icon"></i>
+        Like
+      </span>
+      <span class="right floated star">
+        <i class="star icon"></i>
+        Favorite
+      </span>
+    </div>
+    <div class="content">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+    </div>
+  </div>
+  <div class="ui card">
+    <div class="content">
+      <div class="header">
+        <img src="https://semantic-ui.com/examples/assets/images/wireframe/square-image.png" class="ui avatar right spaced image">
+        Abbreviated Header
+      </div>
+      <div class="description">
+        <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+      </div>
+    </div>
+    <div class="ui two bottom attached buttons">
+      <div class="ui button">
+        Action 1
+      </div>
+      <div class="ui button">
+        Action 2
+      </div>
+    </div>
+  </div>
+  <a href="#" class="ui card">
+    <div class="content">
+      <div class="header">Cute Dog</div>
+      <div class="meta">
+        <span class="category">Animals</span>
+      </div>
+      <div class="description">
+        <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="right floated author">
+        <img src="https://semantic-ui.com/examples/assets/images/wireframe/square-image.png" class="ui avatar image"> Username
+      </div>
+    </div>
+  </a>
+  <div class="ui card">
+    <div class="ui two top attached basic buttons">
+      <div class="ui button">
+        Action 1
+      </div>
+      <div class="ui button">
+        Action 2
+      </div>
+    </div>
+    <div class="content">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png" class="ui wireframe image">
+    </div>
+    <div class="ui two bottom attached basic buttons">
+      <div class="ui button">
+        Action 3
+      </div>
+      <div class="ui button">
+        Action 4
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ui four cards">
+  <div class="card">
+    <div class="content">
+      Content 1
+    </div>
+    <div class="content">
+      Content 2
+    </div>
+    <div class="content">
+      Content 3
+    </div>
+    <div class="extra content">
+      Extra Content
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      Content 1
+    </div>
+    <div class="content">
+      Content 2
+    </div>
+    <div class="content">
+      Content 3
+    </div>
+    <div class="extra content">
+      Extra Content
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      Content 1
+    </div>
+    <div class="content">
+      Content 2
+    </div>
+    <div class="content">
+      Content 3
+    </div>
+    <div class="extra content">
+      Extra Content
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      Content 1
+    </div>
+    <div class="content">
+      Content 2
+    </div>
+    <div class="content">
+      Content 3
+    </div>
+    <div class="extra content">
+      Extra Content
+    </div>
+  </div>
+</div>
+
+<div class="ui four cards">
+  <div class="card">
+    <div class="image">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/image.png">
+    </div>
+    <div class="extra center aligned">
+      <div data-rating="4" class="ui star rating"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/image.png">
+    </div>
+    <div class="extra center aligned">
+      <div data-rating="2" class="ui star rating"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/image.png">
+    </div>
+    <div class="extra center aligned">
+      <div data-rating="3" class="ui star rating"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://semantic-ui.com/examples/assets/images/wireframe/image.png">
+    </div>
+    <div class="extra center aligned">
+      <div data-rating="4" class="ui star rating"></div>
+    </div>
+  </div>
+</div>
+
+<h2 class="ui dividing header">Flags</h2>
+
+<div class="flag example">
+  <i class="andorra flag"></i>
+  <i class="uae flag"></i>
+  <i class="afghanistan flag"></i>
+  <i class="antigua flag"></i>
+  <i class="anguilla flag"></i>
+  <i class="albania flag"></i>
+  <i class="armenia flag"></i>
+  <i class="netherlands antilles flag"></i>
+  <i class="angola flag"></i>
+  <i class="argentina flag"></i>
+  <i class="american samoa flag"></i>
+  <i class="austria flag"></i>
+  <i class="australia flag"></i>
+  <i class="aruba flag"></i>
+  <i class="aland islands flag"></i>
+  <i class="azerbaijan flag"></i>
+  <i class="bosnia flag"></i>
+  <i class="barbados flag"></i>
+  <i class="bangladesh flag"></i>
+  <i class="belgium flag"></i>
+  <i class="burkina faso flag"></i>
+  <i class="bulgaria flag"></i>
+  <i class="bahrain flag"></i>
+  <i class="burundi flag"></i>
+  <i class="benin flag"></i>
+  <i class="bermuda flag"></i>
+  <i class="brunei flag"></i>
+  <i class="bolivia flag"></i>
+  <i class="brazil flag"></i>
+  <i class="bahamas flag"></i>
+  <i class="bhutan flag"></i>
+  <i class="bouvet island flag"></i>
+  <i class="botswana flag"></i>
+  <i class="belarus flag"></i>
+  <i class="belize flag"></i>
+  <i class="canada flag"></i>
+  <i class="cocos islands flag"></i>
+  <i class="congo flag"></i>
+  <i class="central african republic flag"></i>
+  <i class="congo brazzaville flag"></i>
+  <i class="switzerland flag"></i>
+  <i class="cote divoire flag"></i>
+  <i class="cook islands flag"></i>
+  <i class="chile flag"></i>
+  <i class="cameroon flag"></i>
+  <i class="china flag"></i>
+  <i class="colombia flag"></i>
+  <i class="costa rica flag"></i>
+  <i class="serbia flag"></i>
+  <i class="cuba flag"></i>
+  <i class="cape verde flag"></i>
+  <i class="christmas island flag"></i>
+  <i class="cyprus flag"></i>
+  <i class="czech republic flag"></i>
+  <i class="germany flag"></i>
+  <i class="djibouti flag"></i>
+  <i class="denmark flag"></i>
+  <i class="dominica flag"></i>
+  <i class="dominican republic flag"></i>
+  <i class="algeria flag"></i>
+  <i class="ecuador flag"></i>
+  <i class="estonia flag"></i>
+  <i class="egypt flag"></i>
+  <i class="western sahara flag"></i>
+  <i class="eritrea flag"></i>
+  <i class="spain flag"></i>
+  <i class="ethiopia flag"></i>
+  <i class="european union flag"></i>
+  <i class="finland flag"></i>
+  <i class="fiji flag"></i>
+  <i class="falkland islands flag"></i>
+  <i class="micronesia flag"></i>
+  <i class="faroe islands flag"></i>
+  <i class="france flag"></i>
+  <i class="gabon flag"></i>
+  <i class="united kingdom flag"></i>
+  <i class="grenada flag"></i>
+  <i class="georgia flag"></i>
+  <i class="french guiana flag"></i>
+  <i class="ghana flag"></i>
+  <i class="gibraltar flag"></i>
+  <i class="greenland flag"></i>
+  <i class="gambia flag"></i>
+  <i class="guinea flag"></i>
+  <i class="guadeloupe flag"></i>
+  <i class="equatorial guinea flag"></i>
+  <i class="greece flag"></i>
+  <i class="sandwich islands flag"></i>
+  <i class="guatemala flag"></i>
+  <i class="guam flag"></i>
+  <i class="guinea-bissau flag"></i>
+  <i class="guyana flag"></i>
+  <i class="hong kong flag"></i>
+  <i class="heard island flag"></i>
+  <i class="honduras flag"></i>
+  <i class="croatia flag"></i>
+  <i class="haiti flag"></i>
+  <i class="hungary flag"></i>
+  <i class="indonesia flag"></i>
+  <i class="ireland flag"></i>
+  <i class="israel flag"></i>
+  <i class="india flag"></i>
+  <i class="indian ocean territory flag"></i>
+  <i class="iraq flag"></i>
+  <i class="iran flag"></i>
+  <i class="iceland flag"></i>
+  <i class="italy flag"></i>
+  <i class="jamaica flag"></i>
+  <i class="jordan flag"></i>
+  <i class="japan flag"></i>
+  <i class="kenya flag"></i>
+  <i class="kyrgyzstan flag"></i>
+  <i class="cambodia flag"></i>
+  <i class="kiribati flag"></i>
+  <i class="comoros flag"></i>
+  <i class="saint kitts and nevis flag"></i>
+  <i class="north korea flag"></i>
+  <i class="south korea flag"></i>
+  <i class="kuwait flag"></i>
+  <i class="cayman islands flag"></i>
+  <i class="kazakhstan flag"></i>
+  <i class="laos flag"></i>
+  <i class="lebanon flag"></i>
+  <i class="saint lucia flag"></i>
+  <i class="liechtenstein flag"></i>
+  <i class="sri lanka flag"></i>
+  <i class="liberia flag"></i>
+  <i class="lesotho flag"></i>
+  <i class="lithuania flag"></i>
+  <i class="luxembourg flag"></i>
+  <i class="latvia flag"></i>
+  <i class="libya flag"></i>
+  <i class="morocco flag"></i>
+  <i class="monaco flag"></i>
+  <i class="moldova flag"></i>
+  <i class="montenegro flag"></i>
+  <i class="madagascar flag"></i>
+  <i class="marshall islands flag"></i>
+  <i class="macedonia flag"></i>
+  <i class="mali flag"></i>
+  <i class="burma flag"></i>
+  <i class="mongolia flag"></i>
+  <i class="macau flag"></i>
+  <i class="northern mariana islands flag"></i>
+  <i class="martinique flag"></i>
+  <i class="mauritania flag"></i>
+  <i class="montserrat flag"></i>
+  <i class="malta flag"></i>
+  <i class="mauritius flag"></i>
+  <i class="maldives flag"></i>
+  <i class="malawi flag"></i>
+  <i class="mexico flag"></i>
+  <i class="malaysia flag"></i>
+  <i class="mozambique flag"></i>
+  <i class="namibia flag"></i>
+  <i class="new caledonia flag"></i>
+  <i class="niger flag"></i>
+  <i class="norfolk island flag"></i>
+  <i class="nigeria flag"></i>
+  <i class="nicaragua flag"></i>
+  <i class="netherlands flag"></i>
+  <i class="norway flag"></i>
+  <i class="nepal flag"></i>
+  <i class="nauru flag"></i>
+  <i class="niue flag"></i>
+  <i class="new zealand flag"></i>
+  <i class="oman flag"></i>
+  <i class="panama flag"></i>
+  <i class="peru flag"></i>
+  <i class="french polynesia flag"></i>
+  <i class="new guinea flag"></i>
+  <i class="philippines flag"></i>
+  <i class="pakistan flag"></i>
+  <i class="poland flag"></i>
+  <i class="saint pierre flag"></i>
+  <i class="pitcairn islands flag"></i>
+  <i class="puerto rico flag"></i>
+  <i class="palestine flag"></i>
+  <i class="portugal flag"></i>
+  <i class="palau flag"></i>
+  <i class="paraguay flag"></i>
+  <i class="qatar flag"></i>
+  <i class="reunion flag"></i>
+  <i class="romania flag"></i>
+  <i class="serbia flag"></i>
+  <i class="russia flag"></i>
+  <i class="rwanda flag"></i>
+  <i class="saudi arabia flag"></i>
+  <i class="solomon islands flag"></i>
+  <i class="seychelles flag"></i>
+  <i class="sudan flag"></i>
+  <i class="sweden flag"></i>
+  <i class="singapore flag"></i>
+  <i class="saint helena flag"></i>
+  <i class="slovenia flag"></i>
+  <i class="jan mayen flag"></i>
+  <i class="slovakia flag"></i>
+  <i class="sierra leone flag"></i>
+  <i class="san marino flag"></i>
+  <i class="senegal flag"></i>
+  <i class="somalia flag"></i>
+  <i class="suriname flag"></i>
+  <i class="sao tome flag"></i>
+  <i class="el salvador flag"></i>
+  <i class="syria flag"></i>
+  <i class="swaziland flag"></i>
+  <i class="caicos islands flag"></i>
+  <i class="chad flag"></i>
+  <i class="french territories flag"></i>
+  <i class="togo flag"></i>
+  <i class="thailand flag"></i>
+  <i class="tajikistan flag"></i>
+  <i class="tokelau flag"></i>
+  <i class="timorleste flag"></i>
+  <i class="turkmenistan flag"></i>
+  <i class="tunisia flag"></i>
+  <i class="tonga flag"></i>
+  <i class="turkey flag"></i>
+  <i class="trinidad flag"></i>
+  <i class="tuvalu flag"></i>
+  <i class="taiwan flag"></i>
+  <i class="tanzania flag"></i>
+  <i class="ukraine flag"></i>
+  <i class="uganda flag"></i>
+  <i class="us minor islands flag"></i>
+  <i class="united states flag"></i>
+  <i class="uruguay flag"></i>
+  <i class="uzbekistan flag"></i>
+  <i class="vatican city flag"></i>
+  <i class="saint vincent flag"></i>
+  <i class="venezuela flag"></i>
+  <i class="british virgin islands flag"></i>
+  <i class="us virgin islands flag"></i>
+  <i class="vietnam flag"></i>
+  <i class="vanuatu flag"></i>
+  <i class="wallis and futuna flag"></i>
+  <i class="samoa flag"></i>
+  <i class="yemen flag"></i>
+  <i class="mayotte flag"></i>
+  <i class="south africa flag"></i>
+  <i class="zambia flag"></i>
+  <i class="zimbabwe flag"></i>
+</div>
+
+<h2 class="ui dividing header">Icons</h2>
+
+<div class="icon example">
+  <div class="ui doubling five column grid">
+    <div class="column"><i class="add to calendar icon"></i>Add To Calendar</div>
+    <div class="column"><i class="address book icon"></i>Address Book</div>
+    <div class="column"><i class="address book outline icon"></i>Address Book Outline</div>
+    <div class="column"><i class="address card icon"></i>Address Card</div>
+    <div class="column"><i class="address card outline icon"></i>Address Card Outline</div>
+    <div class="column"><i class="alarm icon"></i>Alarm</div>
+    <div class="column"><i class="alarm mute icon"></i>Alarm Mute</div>
+    <div class="column"><i class="alarm mute outline icon"></i>Alarm Mute Outline</div>
+    <div class="column"><i class="alarm outline icon"></i>Alarm Outline</div>
+    <div class="column"><i class="at icon"></i>At</div>
+    <div class="column"><i class="browser icon"></i>Browser</div>
+    <div class="column"><i class="bug icon"></i>Bug</div>
+    <div class="column"><i class="calendar icon"></i>Calendar</div>
+    <div class="column"><i class="calendar outline icon"></i>Calendar Outline</div>
+    <div class="column"><i class="checked calendar icon"></i>Checked Calendar</div>
+    <div class="column"><i class="cloud icon"></i>Cloud</div>
+    <div class="column"><i class="code icon"></i>Code</div>
+    <div class="column"><i class="comment icon"></i>Comment</div>
+    <div class="column"><i class="comment outline icon"></i>Comment Outline</div>
+    <div class="column"><i class="comments icon"></i>Comments</div>
+    <div class="column"><i class="comments icon"></i>Comments</div>
+    <div class="column"><i class="comments outline icon"></i>Comments Outline</div>
+    <div class="column"><i class="copyright icon"></i>Copyright</div>
+    <div class="column"><i class="creative commons icon"></i>Creative Commons</div>
+    <div class="column"><i class="dashboard icon"></i>Dashboard</div>
+    <div class="column"><i class="delete calendar icon"></i>Delete Calendar</div>
+    <div class="column"><i class="external icon"></i>External</div>
+    <div class="column"><i class="external icon"></i>External</div>
+    <div class="column"><i class="external square icon"></i>External Square</div>
+    <div class="column"><i class="eyedropper icon"></i>Eyedropper</div>
+    <div class="column"><i class="feed icon"></i>Feed</div>
+    <div class="column"><i class="find icon"></i>Find</div>
+    <div class="column"><i class="hand pointer icon"></i>Hand Pointer</div>
+    <div class="column"><i class="handshake icon"></i>Handshake</div>
+    <div class="column"><i class="hashtag icon"></i>Hashtag</div>
+    <div class="column"><i class="heartbeat icon"></i>Heartbeat</div>
+    <div class="column"><i class="history icon"></i>History</div>
+    <div class="column"><i class="home icon"></i>Home</div>
+    <div class="column"><i class="hourglass empty icon"></i>Hourglass Empty</div>
+    <div class="column"><i class="hourglass end icon"></i>Hourglass End</div>
+    <div class="column"><i class="hourglass full icon"></i>Hourglass Full</div>
+    <div class="column"><i class="hourglass half icon"></i>Hourglass Half</div>
+    <div class="column"><i class="hourglass start icon"></i>Hourglass Start</div>
+    <div class="column"><i class="id badge icon"></i>Id Badge</div>
+    <div class="column"><i class="id card icon"></i>Id Card</div>
+    <div class="column"><i class="id card outline icon"></i>Id Card Outline</div>
+    <div class="column"><i class="idea icon"></i>Idea</div>
+    <div class="column"><i class="image icon"></i>Image</div>
+    <div class="column"><i class="inbox icon"></i>Inbox</div>
+    <div class="column"><i class="industry icon"></i>Industry</div>
+    <div class="column"><i class="lab icon"></i>Lab</div>
+    <div class="column"><i class="mail icon"></i>Mail</div>
+    <div class="column"><i class="mail outline icon"></i>Mail Outline</div>
+    <div class="column"><i class="mail square icon"></i>Mail Square</div>
+    <div class="column"><i class="mouse pointer icon"></i>Mouse Pointer</div>
+    <div class="column"><i class="open envelope icon"></i>Open Envelope</div>
+    <div class="column"><i class="open envelope outline icon"></i>Open Envelope Outline</div>
+    <div class="column"><i class="options icon"></i>Options</div>
+    <div class="column"><i class="paint brush icon"></i>Paint Brush</div>
+    <div class="column"><i class="payment icon"></i>Payment</div>
+    <div class="column"><i class="percent icon"></i>Percent</div>
+    <div class="column"><i class="podcast icon"></i>Podcast</div>
+    <div class="column"><i class="privacy icon"></i>Privacy</div>
+    <div class="column"><i class="protect icon"></i>Protect</div>
+    <div class="column"><i class="registered icon"></i>Registered</div>
+    <div class="column"><i class="remove from calendar icon"></i>Remove From Calendar</div>
+    <div class="column"><i class="search icon"></i>Search</div>
+    <div class="column"><i class="setting icon"></i>Setting</div>
+    <div class="column"><i class="settings icon"></i>Settings</div>
+    <div class="column"><i class="shop icon"></i>Shop</div>
+    <div class="column"><i class="shopping bag icon"></i>Shopping Bag</div>
+    <div class="column"><i class="shopping basket icon"></i>Shopping Basket</div>
+    <div class="column"><i class="sidebar icon"></i>Sidebar</div>
+    <div class="column"><i class="signal icon"></i>Signal</div>
+    <div class="column"><i class="sitemap icon"></i>Sitemap</div>
+    <div class="column"><i class="tag icon"></i>Tag</div>
+    <div class="column"><i class="tags icon"></i>Tags</div>
+    <div class="column"><i class="tasks icon"></i>Tasks</div>
+    <div class="column"><i class="terminal icon"></i>Terminal</div>
+    <div class="column"><i class="text telephone icon"></i>Text Telephone</div>
+    <div class="column"><i class="ticket icon"></i>Ticket</div>
+    <div class="column"><i class="trademark icon"></i>Trademark</div>
+    <div class="column"><i class="trophy icon"></i>Trophy</div>
+    <div class="column"><i class="window close icon"></i>Window Close</div>
+    <div class="column"><i class="window close outline icon"></i>Window Close Outline</div>
+    <div class="column"><i class="window maximize icon"></i>Window Maximize</div>
+    <div class="column"><i class="window minimize icon"></i>Window Minimize</div>
+    <div class="column"><i class="window restore icon"></i>Window Restore</div>
+  </div>
+</div>
