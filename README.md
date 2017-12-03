@@ -4,6 +4,11 @@
 [![Ebert](https://ebertapp.io/github/kimlindholm/semantic_ui_phoenix_sass_webpack.svg)](https://ebertapp.io/github/kimlindholm/semantic_ui_phoenix_sass_webpack)
 [![codebeat badge](https://codebeat.co/badges/96d10126-2eed-4fa4-8910-dcdbbb3a6200)](https://codebeat.co/projects/github-com-kimlindholm-semantic_ui_phoenix_sass_webpack-master)
 
+## Articles
+
+- **Step 1: [Adding Webpack 3 to Phoenix](https://medium.com/@kimlindholm/adding-webpack-3-to-phoenix-e6633dbc2bc4)**
+- **Step 2: [Adding Semantic UI Sass to Phoenix with Webpack](https://medium.com/@kimlindholm/adding-semantic-ui-sass-to-phoenix-with-webpack-36c7c96ef4e1)**
+
 ## Requirements
 
 * Phoenix 1.3.0 or later
